@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Untuk Pacarku Tersayang</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        text-align: center;
+        padding: 50px;
+      }
+      h1 {
+        color: #e74c3c;
+      }
+      p {
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+      .heart {
+        color: #e74c3c;
+        font-size: 2em;
+      }
+      video {
+        border-radius: 10px;
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+      }
+      /* Tombol untuk mengontrol musik */
+      .music-control {
+        margin-top: 20px;
+      }
+      .music-control button {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      .music-control button:hover {
+        background-color: #c0392b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Untuk Pacarku Tersayang ❤️</h1>
+    <p>
+      Hai Sayang,<br />
+      Aku ingin mengucapkan terima kasih karena selalu ada untukku.<br />
+      Kamu adalah orang yang paling berarti dalam hidupku.<br />
+      Aku mencintaimu lebih dari apapun di dunia ini.
+    </p>
+    <p class="heart">❤️</p>
+    <p>
+      Teruslah bersamaku, ya?<br />
+      Aku berjanji akan selalu membuatmu bahagia.
+    </p>
+    <video width="400" controls>
+      <source
+        src="Video WhatsApp 2025-03-22 pukul 20.31.14_da96faa8.mp4"
+        type="video/mp4"
+      />
+      <source src="video_kalian.ogg" type="video/ogg" />
+    </video>
+
+    <!-- Musik Latar Belakang -->
+    <audio id="background-music" loop>
+      <source
+        src="Audio WhatsApp 2025-03-22 pukul 20.45.44_f91b7cf6.mp3"
+        type="audio/mpeg"
+      />
+      <source src="musik_latar_belakang.ogg" type="audio/ogg" />
+    </audio>
+
+    <!-- Tombol Kontrol Musik -->
+    <div class="music-control">
+      <button onclick="playMusic()">Putar Musik</button>
+      <button onclick="pauseMusic()">Jeda Musik</button>
+    </div>
+
+    <p>
+      Dengan cinta,<br />
+      [Renaldi cahya kusuma]
+    </p>
+
+    <script>
+      // Fungsi untuk memutar musik
+      function playMusic() {
+        var music = document.getElementById("background-music");
+        music.play();
+      }
+
+      // Fungsi untuk menjeda musik
+      function pauseMusic() {
+        var music = document.getElementById("background-music");
+        music.pause();
+      }
+    </script>
+  </body>
+</html>
